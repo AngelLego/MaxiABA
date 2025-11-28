@@ -32,7 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 // Static files
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -44,17 +44,21 @@ app.get('/api/health', (req, res) => {
 });
 
 // API routes
-const authRoutes = require('../src/routes/authRoutes');
-const publicRoutes = require('../src/routes/publicRoutes');
-const adminRoutes = require('../src/routes/adminRoutes');
+try {
+    const authRoutes = require('./src/routes/authRoutes');
+    const publicRoutes = require('./src/routes/publicRoutes');
+    const adminRoutes = require('./src/routes/adminRoutes');
 
-app.use('/api/admin', authRoutes);
-app.use('/api', publicRoutes);
-app.use('/api/admin', adminRoutes);
+    app.use('/api/admin', authRoutes);
+    app.use('/api', publicRoutes);
+    app.use('/api/admin', adminRoutes);
+} catch (error) {
+    console.error('Error loading routes:', error);
+}
 
 // Catch-all for SPA
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // Error handling

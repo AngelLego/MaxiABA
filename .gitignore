@@ -49,3 +49,4 @@ public/uploads/*
 
 # Test
 test-results/
+.vercel
