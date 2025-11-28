@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.example
+tests
+coverage
+*.md
+.git
+.gitignore
+.vscode
+.kiro
+jest.config.js
+nodemon.json
