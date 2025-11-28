@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MAXI SERVICIOS ABA - Gasolinera en Córdoba, Veracruz. Precios competitivos, servicios de calidad.">
+    <meta name="keywords" content="gasolinera, combustible, Córdoba, Veracruz, magna, premium, diesel">
+    <meta name="author" content="MAXI SERVICIOS ABA">
+    <title>MAXI SERVICIOS ABA - Gasolinera en Córdoba, Veracruz</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #003DA5 0%, #002870 100%); z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.5s ease;">
+       
+        <div style="text-align: center; color: white;">
+             <div class="spinner-border text-light mb-3" role="status" style="width: 3rem; height: 3rem;">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <h3 style="font-weight: 700; font-size: 1.5rem;">MaxiServicios ABA</h3>
+             <link rel="icon" type="image/png" href="/images/logo.png">
+            <p style="font-size: 0.9rem;">Cargando...</p>
+            <img src="/images/Mascota-Ham.png" alt="MAXI SERVICIOS ABA" style="width: 120px; height: auto; margin-bottom: 2rem; animation: pulse 1.5s ease-in-out infinite;">
+          
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="/images/logo.png" alt="MAXI SERVICIOS ABA" class="navbar-logo me-2">
+                <span class="brand-text">MAXI SERVICIOS ABA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#precios">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promociones">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('/images/473569613_122185377902058192_937113667778911083_n.jpg');">
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-3 fw-bold text-white mb-4" data-aos="fade-up">
+                                        Bienvenido a MAXI SERVICIOS ABA
+                                    </h1>
+                                    <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">
+                                        Tu gasolinera de confianza en Córdoba, Veracruz
+                                    </p>
+                                    <a href="#precios" class="btn btn-light btn-lg" data-aos="fade-up" data-aos-delay="200">
+                                        Ver Precios <i class="bi bi-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                                <div class="col-lg-4 text-center d-none d-lg-block" data-aos="fade-left" data-aos-delay="300" box-shadow: 0px 0px 5px #fff;>
+                                    <img src="/images/Mascota-Ham.png" alt="Pemex" class="img-fluid hero-logo mb-3" style="max-width: 200px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('/images/587940724_735574636235494_963360301578433820_n.jpg');">
+                    <div class="hero-content">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h1 class="display-3 fw-bold text-white mb-4" data-aos="fade-up">
+                                        Calidad y Servicio
+                                    </h1>
+                                    <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">
+                                        Combustible de calidad garantizada
+                                    </p>
+                                    <a href="#servicios" class="btn btn-light btn-lg" data-aos="fade-up" data-aos-delay="200">
+                                        Nuestros Servicios <i class="bi bi-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <!-- Info Bar -->
+    <section class="info-bar py-3" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-bottom: 3px solid var(--secondary-color);">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <i class="bi bi-clock-fill fs-3" style="color: var(--primary-color);"></i>
+                    <p class="mb-0 mt-2"><strong>Horario:</strong> 24 horas</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <i class="bi bi-telephone-fill fs-3" style="color: var(--secondary-color);"></i>
+                    <p class="mb-0 mt-2"><strong>Teléfono:</strong> (271) 736-9105</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://wa.me/5212717369105" target="_blank" class="btn btn-success btn-whatsapp">
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios Section -->
+    <section id="precios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">
+                <i class="bi bi-currency-dollar" style="color: var(--secondary-color);"></i> 
+                <span style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Precios de Combustible
+                </span>
+            </h2>
+            <div class="row" id="precios-container">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted mt-3">
+                <small>Última actualización: <span id="last-update">--</span></small>
+            </p>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-3" data-aos="fade-up">
+                <i class="bi bi-gear-fill" style="color: var(--primary-color);"></i> 
+                <span style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Nuestros Servicios
+                </span>
+            </h2>
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+                <img src="/images/Logo Pemex.png" alt="Pemex" class="img-fluid mb-2" style="max-width: 150px;">
+                <p class="text-muted">Combustible de calidad garantizada</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-fuel-pump service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Carga de Combustible</h5>
+                            <p class="card-text">Magna, Premium y Diésel de la más alta calidad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-droplet service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Lubricantes</h5>
+                            <p class="card-text">Aceites y lubricantes de marcas reconocidas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-wind service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Aire y Agua</h5>
+                            <p class="card-text">Servicio gratuito de aire y agua para tu vehículo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-brush service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Aspirado</h5>
+                            <p class="card-text">Servicio de aspirado para mantener tu auto limpio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-truck service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Atención a Flotillas</h5>
+                            <p class="card-text">Servicio especializado para empresas y flotillas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-credit-card service-icon text-primary"></i>
+                            <h5 class="card-title mt-3">Pagos Electrónicos</h5>
+                            <p class="card-text">Aceptamos tarjetas de crédito y débito</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones Section -->
+    <section id="promociones" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">
+                <i class="bi bi-tag-fill" style="color: var(--secondary-color);"></i> 
+                <span style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Promociones Vigentes
+                </span>
+            </h2>
+            
+            <!-- Video de Facebook -->
+            <div class="row justify-content-center mb-4" data-aos="fade-up">
+                <div class="col-lg-5 col-md-6 col-sm-8">
+                    <div class="text-center">
+                        <iframe 
+                            src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1238591851630239%2F&show_text=false&width=267" 
+                            width="267" 
+                            height="476" 
+                            style="border:none;overflow:hidden;max-width:100%;" 
+                            scrolling="no" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                        <p class="mt-3 text-muted">
+                            <i class="bi bi-play-circle-fill me-2" style="color: var(--secondary-color);"></i>
+                            <strong>¡Conoce nuestras promociones!</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Promociones dinámicas -->
+            <div class="row g-4" id="promociones-container">
+                <div class="col-12 text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up">
+                    <img src="/images/Logo Pemex.png" alt="Pemex" class="img-fluid brand-logo">
+                </div>
+                <div class="col-6 col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <img src="/images/Logo-Ham.jpg" alt="HAM" class="img-fluid brand-logo">
+                </div>
+               
+                <div class="col-12 col-md-3 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <h5 class="mb-0" style="color: var(--primary-color);">
+                        <i class="bi bi-award-fill me-2" style="color: var(--secondary-color);"></i>
+                        <strong>Calidad Garantizada</strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">
+                <i class="bi bi-envelope-fill" style="color: var(--primary-color);"></i> 
+                <span style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Contacto y Ubicación
+                </span>
+            </h2>
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Envíanos un Mensaje</h5>
+                            <form id="contact-form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Nombre *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <div class="invalid-feedback">Por favor ingresa tu nombre</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">Por favor ingresa un email válido</div>
+                                    <div class="valid-feedback"><i class="bi bi-check-circle-fill"></i> Email válido</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Mensaje *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required maxlength="1000"></textarea>
+                                    <div class="invalid-feedback">Por favor ingresa tu mensaje</div>
+                                    <small class="text-muted"><span id="char-count">0</span>/1000 caracteres</small>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy-consent" name="privacy_consent" required>
+                                    <label class="form-check-label" for="privacy-consent">
+                                        Acepto el <a href="/privacidad.html" target="_blank">Aviso de Privacidad</a> *
+                                    </label>
+                                    <div class="invalid-feedback">Debes aceptar el aviso de privacidad</div>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="marketing-consent" name="marketing_consent">
+                                    <label class="form-check-label" for="marketing-consent">
+                                        Acepto recibir información promocional
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                                </button>
+                            </form>
+                            <div id="form-message" class="mt-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Nuestra Ubicación</h5>
+                            <div class="mb-3">
+                                <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                    <strong>Dirección:</strong><br>
+                                    Calzada Morelos No. 4805<br>
+                                    Col. Santa Matilde<br>
+                                    C.P. 94533 Córdoba, Veracruz, México
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <p><i class="bi bi-telephone-fill text-primary me-2"></i>
+                                    <strong>Teléfono:</strong> (271) 736-9105
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <p><i class="bi bi-envelope-fill text-primary me-2"></i>
+                                    <strong>Email:</strong> buzon@maxiserviciosaba.com
+                                </p>
+                            </div>
+                            <div class="mb-3">
+                                <p><i class="bi bi-clock-fill text-primary me-2"></i>
+                                    <strong>Horario:</strong> 24 horas, 7 días a la semana
+                                </p>
+                            </div>
+                            <div class="ratio ratio-16x9 mt-4">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d374.4796508450204!2d-96.95895304758889!3d18.90844582958015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c4e503fe63a18f%3A0x8d0330f47e606f3f!2sPEMEX!5e0!3m2!1ses!2smx!4v1764357535934!5m2!1ses!2smx"
+                                     style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-4" style="background: linear-gradient(135deg, var(--primary-dark) 0%, var(--dark-color) 100%);"></footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <img src="/images/Logo Pemex.png" alt="MAXI SERVICIOS ABA" class="footer-logo mb-2">
+                    <p class="mb-0 small">&copy; 2026 MaxiServicios ABA S.A. De R.L. </p>
+                    <p class="mb-0 small">Derechos Reservados</p>
+                    
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="/images/legosoft1.png" alt="Pemex" class="img-fluid" style="max-width: 250px; opacity: 0.8;">
+                    
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <a href="/privacidad.html" class="text-black text-decoration-none me-3 d-block d-md-inline mb-2 mb-md-0">
+                        <i class="bi bi-shield-check me-1"></i>Aviso de Privacidad
+                    </a>
+                    <a href="/admin" class="text-black text-decoration-none d-block d-md-inline">
+                        <i class="bi bi-gear-fill me-1"></i>Admin
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+# Database migrations will be stored here
+# Note: SQLite mode uses Sequelize sync instead of migrations
