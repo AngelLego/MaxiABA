@@ -76,11 +76,13 @@ app.use((err, req, res, next) => {
     });
 });
 
-// Start server
-app.listen(PORT, () => {
-    console.log(`🚀 MAXI SERVICIOS ABA server running on port ${PORT}`);
-    console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
-    console.log(`🌐 URL: http://localhost:${PORT}`);
-});
+// Start server (only if not in Vercel)
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`🚀 MAXI SERVICIOS ABA server running on port ${PORT}`);
+        console.log(`📍 Environment: ${process.env.NODE_ENV || 'development'}`);
+        console.log(`🌐 URL: http://localhost:${PORT}`);
+    });
+}
 
 module.exports = app;
